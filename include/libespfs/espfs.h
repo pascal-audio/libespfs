@@ -14,10 +14,6 @@ extern "C" {
 #include <sys/types.h>
 
 
-typedef enum espfs_compression_type_t espfs_compression_type_t;
-typedef enum espfs_flags_t espfs_flags_t;
-typedef enum espfs_stat_type_t espfs_stat_type_t;
-
 typedef struct espfs_fs_t espfs_fs_t;
 typedef struct espfs_file_t espfs_file_t;
 typedef struct espfs_config_t espfs_config_t;
@@ -57,6 +53,10 @@ struct espfs_config_t {
             filesystem. \a addr should be \a NULL if used */
 #endif
 };
+
+typedef enum espfs_compression_type_t espfs_compression_type_t;
+typedef enum espfs_flags_t espfs_flags_t;
+typedef enum espfs_stat_type_t espfs_stat_type_t;
 
 /**
  * \brief Structure filled by \a espfs_stat and \a espfs_fstat functions
